@@ -10,8 +10,9 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 600px;
   text-align: center;
-  width: 600px;
   padding: 20px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -21,7 +22,7 @@ body {
 
 .dropdown label {
   margin-bottom: 8px;
-  font-size: 1rem;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -48,14 +49,14 @@ select {
 }
 
 #quote-text {
-  font-size: 1.5rem;
+  font-size: 16px;
   line-height: 1.4;
   margin-bottom: 10px;
   transition: opacity 0.5s ease-in-out;
 }
 
 #quote-author {
-  font-size: 1rem;
+  font-size: 16px;
   color: #e0e0e0;
 }
 
@@ -64,7 +65,7 @@ button {
   color: #2193b0;
   border: none;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -87,5 +88,70 @@ button:hover {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  select {
+    font-size: 13px;
+    padding: 8px 24px 8px 8px;
+  }
+
+  #quote-text {
+    font-size: 15px;
+  }
+
+  #quote-author {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 6px;
+  }
+
+  .container {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  #quote-text {
+    font-size: 14px;
+  }
+
+  #quote-author {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
